@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+
+sourceCompatibility = 1.7
+
+repositories {
+  mavenCentral()
+}
+dependencies {
+  compile(
+      'org.eclipse.jetty:jetty-webapp:9.2.1.v20140609',
+      'org.eclipse.jetty:jetty-server:9.2.1.v20140609'
+
+  )
+
+
+}
+mainClassName = "EmbeddedServer"
+
+
