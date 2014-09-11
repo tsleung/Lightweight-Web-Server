@@ -4,20 +4,58 @@
   <meta charset="UTF-8">
   <title>Welcome</title>
   <style>
-    body > div{
-      border-left:1px solid #ddd;
-      margin:2em;
-      line-height:1.5em;
-      font-size:.8em;
-      padding:2em;
+    html,body{
+      font-size:16px;
+      background: #00539c;
+      min-height:100%;
+      position:relative;
     }
+    body > div{
+      border:1px solid #ddd;
+      margin:4em;
+      margin-left: 10em;
+      max-width:800px;
+      line-height:1.5em;
+      padding:2em;
+      background:white;
+      border-radius: 2em;
+    }
+    body > div > div{
+      border-left:2px solid #00539c;
+      margin:2em;
 
+      padding:1em 2em;
+    }
+    body > nav{
+      position:fixed;
+      top:4em;
+      left:0;
+      margin-right:1em;
+      width:6em;
+    }
+    body > nav li{
+      color:#fff;
+      list-style-type: circle;
+    }
+    body > nav a{
+      color:white;
+      font-weight:bold;
+      text-decoration: none;
+    }
+    body > nav a:hover{
+      text-decoration:underline;
+    }
   </style>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
-
-  <div>
+  <nav>
+    <ul>
+      <li><a href="#day1">Day 1</a></li>
+      <li><a href="#day2">Day 2</a> </li>
+    </ul>
+  </nav>
+  <div id="day1">
     <h2>Day 1</h2>
 
     <h3>Objectives</h3>
@@ -99,6 +137,78 @@
 
 
   </div>
+
+  <div id="day2">
+    <h2>Day 2</h2>
+    <h3>Objectives</h3>
+    <ul>
+      <li>Review Environment Setup + Slideshow</li>
+      <li>Assign Research Topics</li>
+      <li>jQuery + RequireJS</li>
+      <li>Deliverables</li>
+      <li>Reading Material</li>
+    </ul>
+    <div>
+      <h3>Review Environment Setup + Slideshow</h3>
+      <ul>
+        <li>Environment Setup</li>
+        <li>Semantic HTML</li>
+        <li>Applying Fundamental Styling</li>
+        <li>Difficulties Encountered</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Assign Research Topics</h3>
+      <ul>
+        <li>Frameworks</li>
+        <li>Continuous Integration and Deployment</li>
+        <li>Testing (Functional, Integration, Unit, A/B)</li>
+        <li>Optimization and Scalability</li>
+        <li>Usability and Design</li>
+      </ul>
+      <p><em>Volunteers welcomed to present first!</em></p>
+    </div>
+    <div>
+      <h3>jQuery + RequireJS</h3>
+      <h4>jQuery</h4>
+      <ul>
+        <li>Browser Normalization</li>
+        <li>Helpers Ajax/Animation Abstract vs Low Level API</li>
+      </ul>
+      <h4>RequireJS</h4>
+      <ul>
+        <li>Asynchronous Module Definition</li>
+        <li>Modularity</li>
+        <li>Dependency Management</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Deliverables</h3>
+      <ul>
+        <li>
+          Slideshow Style Using Classes
+        </li>
+        <li>
+          External Stylesheets
+        </li>
+        <li>
+          No usage of HTML IDs
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3>Reading Material</h3>
+      <ul>
+        <li>LESS and SASS</li>
+        <li>Bootstrap 3.0</li>
+        <li>Responsive Design + Grid Systems</li>
+        <li>Google University JavaScript Video</li>
+      </ul>
+    </div>
+
+  </div>
+
 
 </body>
 </html>

@@ -14,7 +14,7 @@ public class EmbeddedServer {
   private static final Logger LOG = Log.getLogger(EmbeddedServer.class);
 
   public static void main(String[] args) throws Exception {
-    Server server = new Server(8080);
+    Server server = new Server(9080);
 
     ResourceHandler resource_handler = new ResourceHandler();
     resource_handler.setDirectoriesListed(true);
