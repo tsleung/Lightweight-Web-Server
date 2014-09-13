@@ -1,42 +1,45 @@
 
-    html,body{
-      font-size:16px;
-      background: #00539c;
-      min-height:100%;
-      position:relative;
-    }
-    body > div{
-      border:1px solid #ddd;
-      margin:4em;
-      margin-left: 10em;
-      max-width:800px;
-      line-height:1.5em;
-      padding:2em;
-      background:white;
-      border-radius: 2em;
-    }
-    body > div > div{
-      border-left:2px solid #00539c;
-      margin:2em;
+html,body{
+  font-size:16px;
+  background: #00539c;
+  min-height:100%;
+  position:relative;
+}
+.slides{
+  margin-left: 10em;
+}
+.slides > div{
+  border:1px solid #ddd;
+  margin:4em;
 
-      padding:1em 2em;
-    }
-    body > nav{
-      position:fixed;
-      top:4em;
-      left:0;
-      margin-right:1em;
-      width:6em;
-    }
-    body > nav li{
-      color:#fff;
-      list-style-type: circle;
-    }
-    body > nav a{
-      color:white;
-      font-weight:bold;
-      text-decoration: none;
-    }
-    body > nav a:hover{
-      text-decoration:underline;
-    }
+  max-width:800px;
+  line-height:1.5em;
+  padding:2em;
+  background:white;
+  border-radius: 2em;
+}
+.slides > div > div{
+  border-left:2px solid #00539c;
+  margin:2em;
+
+  padding:1em 2em;
+}
+body > nav{
+  position:fixed;
+  top:4em;
+  left:0;
+  margin-right:1em;
+  width:6em;
+}
+body > nav li{
+  color:#fff;
+  list-style-type: circle;
+}
+body > nav a{
+  color:white;
+  font-weight:bold;
+  text-decoration: none;
+}
+body > nav a:hover{
+  text-decoration:underline;
+}
