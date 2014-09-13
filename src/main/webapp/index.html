@@ -3,223 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Welcome</title>
-  <style>
-    html,body{
-      font-size:16px;
-      background: #00539c;
-      min-height:100%;
-      position:relative;
-    }
-    body > div{
-      border:1px solid #ddd;
-      margin:4em;
-      margin-left: 10em;
-      max-width:800px;
-      line-height:1.5em;
-      padding:2em;
-      background:white;
-      border-radius: 2em;
-    }
-    body > div > div{
-      border-left:2px solid #00539c;
-      margin:2em;
 
-      padding:1em 2em;
-    }
-    body > nav{
-      position:fixed;
-      top:4em;
-      left:0;
-      margin-right:1em;
-      width:6em;
-    }
-    body > nav li{
-      color:#fff;
-      list-style-type: circle;
-    }
-    body > nav a{
-      color:white;
-      font-weight:bold;
-      text-decoration: none;
-    }
-    body > nav a:hover{
-      text-decoration:underline;
-    }
-  </style>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"></script>
+  <link rel="stylesheet" href="/static/css/all.css"/>
 </head>
 <body>
   <nav>
     <ul>
-      <li><a href="#day1">Day 1</a></li>
-      <li><a href="#day2">Day 2</a> </li>
+
     </ul>
   </nav>
-  <div id="day1">
-    <h2>Day 1</h2>
-
-    <h3>Objectives</h3>
-    <ul>
-      <li>Set up your environment</li>
-      <li>Assign Research Topics</li>
-      <li>Deliverables</li>
-    </ul>
-
-
-
-
-    <div>
-      <h3>Setting up your environment</h3>
-
-
-      <h4>IDE Setup</h4>
-      <ul>
-        <li>Eclipse</li>
-        <li>IntelliJ</li>
-      </ul>
-      <ol>
-        <li>Checkout the Code</li>
-        <li>Set up Gradle</li>
-
-      </ol>
-
-      <h4>
-        Get server from Git
-      </h4>
-      <ol>
-        <li>Fork on Github</li>
-        <li>Checkout your Fork</li>
-        <li>Switch Branch</li>
-        <li>Run gradle build</li>
-        <li>Run EmbeddedServer</li>
-
-
-      </ol>
-
-      <h4>How everything works together</h4>
-      <ul>
-        <li>Version Control</li>
-        <li>Editor</li>
-        <li>Build System</li>
-        <li>Server</li>
-      </ul>
-
-    </div>
-
-
-    <div>
-      <h3>Research Topics</h3>
-      <h4>Suggested Topics</h4>
-      <ul>
-        <li>Frameworks</li>
-        <li>Continuous Integration and Deployment</li>
-        <li>Testing (Functional, Integration, Unit, A/B)</li>
-        <li>Optimization and Scalability</li>
-        <li>Usability and Design</li>
-        <li>Anything else you want</li>
-      </ul>
-    </div>
-
-    <div>
-      <h3>Deliverables</h3>
-      <h4>What to finish</h4>
-      <ul>
-        <li>Have your environment setup</li>
-        <li>Create a slideshow </li>
-      </ul>
-      <h4>What to read</h4>
-      <ul>
-        <li>Client - Server and HTTP</li>
-        <li>jQuery + RequireJS</li>
-        <li>Google University HTML/CSS/JavaScript Videos</li>
-      </ul>
-    </div>
+  <div class="slides">
 
 
   </div>
-
-  <div id="day2">
-    <h2>Day 2</h2>
-    <h3>Objectives</h3>
-    <ul>
-      <li>Review Environment Setup + Slideshow</li>
-      <li>Assign Research Topics</li>
-      <li>Client - Server and HTTP</li>
-      <li>jQuery + RequireJS</li>
-      <li>Deliverables</li>
-      <li>Reading Material</li>
-    </ul>
-    <div>
-      <h3>Review Environment Setup + Slideshow</h3>
-      <ul>
-        <li>Environment Setup</li>
-        <li>Semantic HTML</li>
-        <li>Applying Fundamental Styling</li>
-        <li>Difficulties Encountered</li>
-      </ul>
-    </div>
-
-    <div>
-      <h3>Assign Research Topics</h3>
-      <ul>
-        <li>Frameworks</li>
-        <li>Continuous Integration and Deployment</li>
-        <li>Testing (Functional, Integration, Unit, A/B)</li>
-        <li>Optimization and Scalability</li>
-        <li>Usability and Design</li>
-      </ul>
-      <p><em>Volunteers welcomed to present first!</em></p>
-    </div>
-    <div>
-      <h3>Client- Server and HTTP</h3>
-      <ul>
-        <li>What is a Client and Server</li>
-        <li>Links + Forms</li>
-        <li>Images and External Scripts</li>
-        <li>Absolute vs Relative Pathing</li>
-        <li>GET/POST/Put/Delete</li>
-      </ul>
-    </div>
-    <div>
-      <h3>jQuery + RequireJS</h3>
-      <h4>jQuery</h4>
-      <ul>
-        <li>Browser Normalization</li>
-        <li>Helpers Ajax/Animation Abstract vs Low Level API</li>
-      </ul>
-      <h4>RequireJS</h4>
-      <ul>
-        <li>Asynchronous Module Definition</li>
-        <li>Modularity</li>
-        <li>Dependency Management</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Deliverables</h3>
-      <ul>
-        <li>
-          Slideshow Style Using Classes
-        </li>
-        <li>
-          External Stylesheets
-        </li>
-        <li>
-          No usage of HTML IDs
-        </li>
-      </ul>
-    </div>
-    <div>
-      <h3>Reading Material</h3>
-      <ul>
-        <li>LESS and SASS</li>
-        <li>Bootstrap 3.0</li>
-        <li>Responsive Design + Grid Systems</li>
-        <li>Google University JavaScript Video</li>
-      </ul>
-    </div>
-
-  </div>
-
-
+  <script type="text/javascript">
+    requirejs.config({
+        paths : {
+            jquery : '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min'
+        }
+    });
+    require([
+        'jquery',
+        '/static/js/all.js'
+        ], function($){
+        require(['app/Slideshow'],function(App){
+            new App({
+                $el : $(window.document.body),
+                window : window
+            }).start();
+        });
+    });
+  </script>
 </body>
 </html>
