@@ -24,6 +24,7 @@ html,body{
 
   padding:1em 2em;
 }
+
 body > nav{
   position:fixed;
   top:4em;
